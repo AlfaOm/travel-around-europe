@@ -1,0 +1,35 @@
+{
+  "name": "travel-around-europe",
+  "version": "1.0.0",
+  "description": "Грейдирование. Проект \"Путешествие по Европе\"",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlfaOm/travel-around-europe.git"
+  },
+  "author": "AF",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlfaOm/travel-around-europe/issues"
+  },
+  "homepage": "https://github.com/AlfaOm/travel-around-europe#readme",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "autoprefixer": "^10.4.2",
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-less": "^5.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "postcss": "^8.4.6",
+    "stylelint": "^14.5.1",
+    "stylelint-config-htmlacademy": "^0.1.12"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
