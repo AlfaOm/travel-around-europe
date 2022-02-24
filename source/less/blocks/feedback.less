@@ -1,0 +1,94 @@
+.feedback {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  background-color: @white-cream;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 70px;
+    padding-bottom: 74px;
+    margin-bottom: 79px;
+
+    background-color: @bg-color-feedback;
+    background-image: url("../img/background/bg-feedback-tab.jpg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/bg-feedback-tab.jpg");
+      background-size: 1169px 455px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin-bottom: 160px;
+    background: none;
+  }
+}
+
+.feedback__wrapper-desktop {
+  @media (min-width: @desktop-width) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    max-width: 1170px;
+    background-image: url("../img/background/bg-feedback-desktop.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/bg-feedback-desktop.jpg");
+      background-size: 1170px 455px;
+    }
+  }
+}
+
+.feedback__wrapper {
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    padding: 50px;
+    width: 658px;
+    background-color: @basic-white;
+    box-shadow: 0 4px 30px @bx-sh-form;
+    border-radius: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+    width: 656px;
+  }
+}
+
+.feedback__title {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 32px;
+  color: @ultra-black;
+  vertical-align: middle;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 15px;
+  }
+}
+
+.feedback__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
+  line-height: 24px;
+  color: @ultra-black;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 24px;
+  }
+}

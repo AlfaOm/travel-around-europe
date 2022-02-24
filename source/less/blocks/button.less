@@ -1,0 +1,34 @@
+.button {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  color: @basic-white;
+  background-color: @basic-menu-hover;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @button-hover;
+  }
+
+  &:focus {
+    background-color: @button-hover;
+  }
+
+  &--promo {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.6px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,156 @@
+.tariff {
+  padding-top: 30px;
+  margin-bottom: 32px;
+  width: 288px;
+  outline: 1px solid rgba(@basic-black, 0.3);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: @basic-white;
+
+  &:hover {
+    outline: 3px solid @basic-menu-hover;
+
+    .tariff__title,
+    .tariff__price {
+      color: @basic-menu-hover;
+    }
+  }
+
+  &--special {
+    .tariff__item::before {
+      background-image: url("../img/svg/check.svg");
+    }
+
+    .tariff__button {
+      margin-top: 11px;
+      left: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 370px;
+    min-height: 672px;
+  }
+}
+
+.tariff__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 30px;
+  }
+}
+
+.tariff__header {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+}
+
+.tariff__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  color: rgba(@basic-gray, 0.7);
+}
+
+.tariff__price {
+  margin: 0;
+  margin-bottom: 11px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 34px;
+  color: rgba(@basic-gray, 0.7);
+}
+
+.tariff__text {
+  position: relative;
+  margin-bottom: 31px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 21px;
+  color: @basic-black;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 75px;
+    left: 20px;
+    width: 248px;
+    height: 1px;
+    background-color: rgba(@basic-black, 0.3);
+
+    @media (min-width: @desktop-width) {
+      width: 310px;
+      left: 30px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 59px;
+    padding-left: 29px;
+    text-align: left;
+  }
+}
+
+.tariff__list {
+  padding: 0;
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+  list-style: none;
+
+  @media (min-width: @desktop-width) {
+    padding-right: 30px;
+    padding-left: 60px;
+  }
+}
+
+.tariff__item {
+  position: relative;
+  margin-bottom: 10px;
+  line-height: 32px;
+  color: @basic-black;
+  text-align: left;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -26px;
+    width: 14px;
+    height: 12px;
+    background-image: url("../img/svg/check-red.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 15px;
+  }
+}
+
+.tariff__button {
+  position: relative;
+  top: 1px;
+  left: 0;
+  width: 288px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 310px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+  }
+}
