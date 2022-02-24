@@ -1,0 +1,158 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(-1000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.modal-wrapper {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  left: 0;
+  bottom: auto;
+  z-index: 5;
+  width: 320px;
+
+  margin: auto;
+
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    width: 720px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 728px;
+  }
+
+  &--show {
+    display: block;
+    animation: bounce 0.3s;
+  }
+}
+
+.modal-wrapper__block {
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("../img/popup.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    width: 720px;
+  }
+}
+
+.modal-wrapper__form {
+  position: relative;
+  padding-top: 100px;
+  padding-right: 16px;
+  padding-bottom: 185px;
+  padding-left: 16px;
+  background-color: @basic-white;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 73px;
+    padding-right: 60px;
+    padding-bottom: 89px;
+    padding-left: 60px;
+    width: 386px;
+    background-color: @bg-menu-item;
+  }
+}
+
+.modal-wrapper__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.modal-wrapper__success {
+  position: absolute;
+  padding-top: 263px;
+  padding-right: 16px;
+  padding-left: 16px;
+  top: 0;
+  left: 0;
+  width: 320px;
+  min-height: 100%;
+  text-align: center;
+  background-color: @basic-white;
+
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 179px 160px;
+    left: -334px;
+    width: 720px;
+    min-height: 100%;
+    background-color: @bg-menu-item;
+  }
+
+  &--show {
+    display: block;
+  }
+}
+
+.modal-wrapper__success-text {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 32px;
+  color: @color-success;
+
+  @media (min-width: @tablet-width) {
+    width: 399px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 42px;
+  }
+}
+
+.modal-wrapper__close {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 13px;
+    width: 32px;
+    height: 1px;
+    background-color: @basic-gray;
+    z-index: 5;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

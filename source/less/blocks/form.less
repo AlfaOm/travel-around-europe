@@ -1,0 +1,62 @@
+.form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+  }
+}
+
+.form__input-wrapper {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.form__input {
+  padding-top: 16px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 51px;
+  font-size: 14px;
+  line-height: 17px;
+  color: @ultra-black;
+  border: 1px solid rgba(@basic-black, 0.3);
+  width: 100%;
+
+  &--email {
+    padding-left: 15px;
+    padding-right: 51px;
+  }
+
+  &::placeholder {
+    color: @ultra-black;
+  }
+}
+
+.form__input-code-phone {
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 15px;
+}
+
+.form__button {
+  width: 288px;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 176px;
+  }
+}
+
+.form__input--invalid {
+  border-color: @basic-menu-hover;
+}
