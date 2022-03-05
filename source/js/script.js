@@ -42,7 +42,7 @@ const buyTour = document.querySelectorAll(".button--buy");
 const modalForm = modal.querySelector("form");
 const modalFormSubmit = document.querySelector(".modal-wrapper");
 const modalSuccess = document.querySelector(".modal-wrapper__success");
-const feedbackForm = document.querySelector(".form__feedback");
+const feedbackForm = document.querySelector("#form-feedback");
 
 
 buyTour.forEach(function(item) {
