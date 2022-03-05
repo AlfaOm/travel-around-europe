@@ -23,4 +23,6 @@
 *PixelPerfect в desktop версии
 
 ---
+
+## Посмотреть готовый проект [здесь](https://alfaom.github.io/project-graiding/).
 ---
